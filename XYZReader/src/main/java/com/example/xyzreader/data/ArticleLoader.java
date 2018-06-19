@@ -1,7 +1,7 @@
 package com.example.xyzreader.data;
 
 import android.content.Context;
-import android.content.CursorLoader;
+import android.support.v4.content.CursorLoader;
 import android.net.Uri;
 
 /**
@@ -17,7 +17,12 @@ public class ArticleLoader extends CursorLoader {
     }
 
     private ArticleLoader(Context context, Uri uri) {
-        super(context, uri, Query.PROJECTION, null, null, ItemsContract.Items.DEFAULT_SORT);
+
+        super(context, uri, Query.
+                PROJECTION,
+                null,
+                null,
+                ItemsContract.Items.DEFAULT_SORT);
     }
 
     public interface Query {
