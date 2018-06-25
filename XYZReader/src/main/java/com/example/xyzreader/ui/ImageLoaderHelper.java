@@ -20,7 +20,7 @@ public class ImageLoaderHelper {
     }
 
     private final LruCache<String, Bitmap> mImageCache = new LruCache<>(20);
-    private ImageLoader mImageLoader;
+    private final ImageLoader mImageLoader;
 
     private ImageLoaderHelper(Context applicationContext) {
         RequestQueue queue = Volley.newRequestQueue(applicationContext);
