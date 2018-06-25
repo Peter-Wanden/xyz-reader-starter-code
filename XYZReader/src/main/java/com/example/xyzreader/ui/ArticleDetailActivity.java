@@ -1,5 +1,7 @@
 package com.example.xyzreader.ui;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.support.v4.app.Fragment;
 
 import android.support.v4.app.LoaderManager;
@@ -71,8 +73,8 @@ public class ArticleDetailActivity extends AppCompatActivity
             }
         });
 
+        // Match up button presses with the back button
         mUpButtonContainer = findViewById(R.id.up_container);
-
         mUpButton = findViewById(R.id.action_up);
         mUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
