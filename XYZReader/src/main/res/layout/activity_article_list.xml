@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Manual elevation removed as per code review comment 'the elevation is already built into
+    the AppBarLayout so you don't really need to manually specify it'. -->
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/appbar_height"
-        android:elevation="8dp">
+        android:layout_height="@dimen/appbar_height">
 
         <!-- CollapsingToolBar layout is responsible for drawing the title.
         Scroll off the screen until collapsed size is reached. -->
